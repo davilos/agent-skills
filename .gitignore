@@ -5,6 +5,10 @@ node_modules/
 dist/
 *.tsbuildinfo
 
+# Python bytecode (skill scripts)
+__pycache__/
+*.pyc
+
 # Generated graph
 graph.json
 

@@ -1716,6 +1716,25 @@
       "contentHash": "428b064742db100add4d42612ce61eaed040aad87e6718e494a09ad9ae03552b"
     },
     {
+      "name": "tlc-plan-review",
+      "description": "Builds an interactive HTML review page that mirrors a tlc-spec-lean plan.md section by section, with visual Problem / Flow / Impact / Landing views, per-section validation, and scripts that prove nothing from the plan is missing. Publishes it as an Artifact when available, otherwise writes a local HTML file. Use right after a tlc-spec-lean plan passes validate_plan.py and on every new plan version, or when the user says \"plan review page\", \"make a page for the plan\", \"show the plan as a page\", \"interactive plan\", \"tlc-plan-review\", \"update the plan page\", or \"sync what I validated on the page\". Do NOT use for writing or changing the plan, or for checks, build or verify (use tlc-spec-lean), for cutting a PRD into tasks (use tlc-plan), or for generic diagrams (use mermaid-studio).",
+      "category": "development",
+      "path": "(development)/tlc-plan-review",
+      "files": [
+        "SKILL.md",
+        "assets/template.html",
+        "references/review-page-json.md",
+        "scripts/build_page.py",
+        "scripts/check_page.cjs",
+        "scripts/coverage.py",
+        "scripts/extract_plan.py",
+        "scripts/sync_review.py"
+      ],
+      "author": "Dávilos Tavares - github.com/davilos",
+      "version": "1.0.0",
+      "contentHash": "f98b708b5df7add11998cfe31be6a3ce2dbca6de90cc9219b29c1663c17a4600"
+    },
+    {
       "name": "tlc-prd",
       "description": "Interviews an idea into a PRD file covering situation, problem, success, boundary, and journey states, and stops before any technical design. Use when the user says \"write the PRD\", \"create the PRD\", \"PRD\", \"product spec\", \"product requirements\", \"tlc-prd\", or \"what does the product need to decide\". Do NOT use for designing a solution, choosing technology, publishing the document, or cutting the PRD into tasks.",
       "category": "development",
